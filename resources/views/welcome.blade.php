@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Pendaftaran Lomba</title>
+    <title>woilah cik</title>
     <!-- Memanggil Tailwind CSS lewat CDN agar tampilan rapi -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
