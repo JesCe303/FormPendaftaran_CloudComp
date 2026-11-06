@@ -65,12 +65,11 @@ deployment commands in `.github/workflows/deploy.yml`.
 
 Add these repository secrets in **Settings → Secrets and variables → Actions**:
 
-- `DEPLOY_HOST`: CloudPanel hostname or IP address
-- `DEPLOY_PORT`: SSH port, usually `22`
-- `DEPLOY_USER`: the CloudPanel site user
-- `DEPLOY_PATH`: `/home/<site-user>/htdocs/<domain>`
-- `DEPLOY_SSH_PRIVATE_KEY`: private SSH key matching a public key authorized for the site user
-- `DEPLOY_KNOWN_HOSTS`: output of `ssh-keyscan -p <port> <host>`
+- `SSH_HOST`: CloudPanel hostname or IP address
+- `SSH_PORT`: SSH port, usually `22`
+- `SSH_USERNAME`: the CloudPanel site user
+- `SSH_KEY`: private SSH key matching a public key authorized for the site user
 
 The production `.env` stays on the server and is never committed or replaced
-by the workflow.
+by the workflow. The deployment path is configured in the workflow for this
+site.
